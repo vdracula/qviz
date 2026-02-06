@@ -75,7 +75,7 @@ async def cmd_quiz(message: Message):
         "Привет! Это викторина с вопросами от ИИ.\n\n"
         "Нажми кнопку ниже, чтобы получить новый вопрос."
     )
-    await message.answer(text, reply_markup=kb)
+    await message.answer(text, reply_markup=main_menu_kb())
 
 @dp.callback_query(F.data == "quiz:new")
 async def cb_new_question(callback: CallbackQuery):
