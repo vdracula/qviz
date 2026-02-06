@@ -7,7 +7,7 @@ from aiogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Command
 
 from quiz_service import get_or_create_state
 from services_db import update_score, get_stats
